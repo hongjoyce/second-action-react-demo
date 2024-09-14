@@ -2,7 +2,7 @@ name: Deploy Project
 on: [push, workflow_dispatch]
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # runner, the server/machine that execute the jobs
     steps:
       - name: Get Code
         uses: actions/checkout@v3
